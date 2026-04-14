@@ -1,33 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>روابط شركة CME للهندسة البحرية</title>
+    <title>روابط شركة Commands CME للهندسة البحرية</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+        
         body {
-            background: radial-gradient(circle at center, #2c2c2c 0%, #1a1a1a 100%);
+            background: radial-gradient(circle at center, #2c2c2c 0%, #0a0a0a 100%);
             color: #e5e5e5;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .metal-card {
-            background: linear-gradient(145deg, #3d3d3d, #252525);
-            border: 1px solid #b8860b;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            border-radius: 20px;
-        }
-        .link-btn {
-            background: rgba(184, 134, 11, 0.1);
-            border: 1px solid rgba(184, 134, 11, 0.3);
-            transition: all 0.3s ease;
+            font-family: 'Cairo', sans-serif;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 15px;
+        }
+        .metal-card {
+            background: linear-gradient(145deg, #252525, #121212);
+            border: 1px solid #b8860b;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+            border-radius: 24px;
+        }
+        .link-btn {
+            background: rgba(184, 134, 11, 0.05);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            padding: 16px;
             margin-bottom: 12px;
-            border-radius: 12px;
+            border-radius: 15px;
             text-decoration: none;
             color: #fff;
             font-weight: 600;
@@ -36,55 +42,79 @@
             background: #b8860b;
             color: #000;
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(184, 134, 11, 0.4);
+            box-shadow: 0 8px 20px rgba(184, 134, 11, 0.3);
+            border-color: #b8860b;
         }
         .logo-glow {
-            filter: drop-shadow(0 0 10px rgba(184, 134, 11, 0.5));
+            filter: drop-shadow(0 0 15px rgba(184, 134, 11, 0.4));
         }
     </style>
 </head>
-<body class="min-h-screen flex items-center justify-center p-4">
+<body class="p-4">
 
-    <div class="max-w-md w-full text-center metal-card p-8">
-        <!-- Logo Section -->
-        <div class="mb-6">
-            <div class="w-32 h-32 mx-auto mb-4 logo-glow bg-zinc-800 rounded-full flex items-center justify-center border-2 border-[#b8860b]">
-                <span class="text-3xl font-bold text-[#b8860b]">CME</span>
+    <div class="max-w-md w-full text-center metal-card p-8 md:p-10">
+        <!-- قسم اللوجو والهوية -->
+        <div class="mb-8">
+            <div class="w-28 h-28 mx-auto mb-5 logo-glow bg-zinc-900 rounded-full flex items-center justify-center border-2 border-[#b8860b]">
+                <span class="text-3xl font-black text-[#b8860b]" style="letter-spacing: 2px;">CME</span>
             </div>
-            <h1 class="text-2xl font-bold text-[#b8860b]">Commands Marine Engineering</h1>
-            <p class="text-sm text-gray-400 mt-2">الهندسة البحرية كما يجب أن تكون</p>
+            <h1 class="text-2xl font-black text-[#b8860b] uppercase tracking-tighter">Commands CME</h1>
+            <p class="text-xs text-gray-400 mt-2 font-bold tracking-widest uppercase">Marine Engineering & Transport</p>
+            <p class="text-[10px] text-[#b8860b] mt-1 font-bold">تصنيع مقطورات • نقل • صيانة</p>
         </div>
 
-        <!-- Links Section -->
-        <div class="flex flex-col">
-            <a href="https://facebook.com/CME_Egypt" class="link-btn">
-                <i class="fab fa-facebook-f ml-3"></i> فيسبوك - Facebook
+        <!-- قسم الروابط الذكية -->
+        <div class="flex flex-col text-right">
+            
+            <!-- رابط فيسبوك المحدث -->
+            <a href="https://facebook.com/Commands_CME" target="_blank" class="link-btn">
+                <i class="fab fa-facebook-f ml-4 text-xl"></i>
+                <div class="flex flex-col">
+                    <span>فيسبوك - Facebook</span>
+                    <span class="text-[10px] opacity-60 font-normal">@Commands_CME</span>
+                </div>
             </a>
             
-            <a href="https://instagram.com/CME_Egypt" class="link-btn">
-                <i class="fab fa-instagram ml-3"></i> انستجرام - Instagram
+            <!-- رابط انستجرام المحدث -->
+            <a href="https://instagram.com/Commands_CME" target="_blank" class="link-btn">
+                <i class="fab fa-instagram ml-4 text-xl"></i>
+                <div class="flex flex-col">
+                    <span>انستجرام - Instagram</span>
+                    <span class="text-[10px] opacity-60 font-normal">@Commands_CME</span>
+                </div>
             </a>
 
-            <a href="https://linkedin.com/company/cme-egypt" class="link-btn">
-                <i class="fab fa-linkedin-in ml-3"></i> لينكد إن - LinkedIn
+            <!-- رابط واتساب (ضع رقمك مكان الأصفار) -->
+            <a href="https://wa.me/201000000000" target="_blank" class="link-btn">
+                <i class="fab fa-whatsapp ml-4 text-xl text-green-500"></i>
+                <div class="flex flex-col">
+                    <span>واتساب - WhatsApp</span>
+                    <span class="text-[10px] opacity-60 font-normal">تواصل مباشر لطلبات التصنيع</span>
+                </div>
             </a>
 
-            <a href="https://tiktok.com/@CME_Egypt" class="link-btn">
-                <i class="fab fa-tiktok ml-3"></i> تيك توك - TikTok
+            <!-- رابط الموقع الجغرافي (ضع رابط ماب الخاص بك) -->
+            <a href="https://maps.google.com" target="_blank" class="link-btn">
+                <i class="fas fa-map-marker-alt ml-4 text-xl text-red-500"></i>
+                <div class="flex flex-col">
+                    <span>موقعنا الجغرافي</span>
+                    <span class="text-[10px] opacity-60 font-normal">الإسماعيلية - مصر</span>
+                </div>
             </a>
 
-            <a href="mailto:commandsmarineengineeringcme@gmail.com" class="link-btn">
-                <i class="fas fa-envelope ml-3"></i> البريد الإلكتروني
-            </a>
-            
-            <a href="tel:+201503111131" class="link-btn bg-[#b8860b] text-black">
-                <i class="fas fa-phone-alt ml-3"></i> اتصل بنا الآن
+            <!-- زر الاتصال السريع (ضع رقمك مكان الأصفار) -->
+            <a href="tel:+201000000000" class="link-btn bg-[#b8860b] text-black border-none hover:bg-white">
+                <i class="fas fa-phone-alt ml-4 text-xl"></i>
+                <div class="flex flex-col">
+                    <span class="font-bold">اتصل بنا الآن</span>
+                    <span class="text-[10px] font-normal uppercase">Direct Call Support</span>
+                </div>
             </a>
         </div>
 
-        <!-- Footer -->
-        <div class="mt-8 text-xs text-gray-500">
-            &copy; 2026 CME Marine Engineering. جميع الحقوق محفوظة.
+        <!-- الفوتر -->
+        <div class="mt-10 text-[10px] text-gray-500 font-bold tracking-[3px] uppercase">
+            &copy; 2026 Commands CME Engineering
         </div>
     </div>
 
